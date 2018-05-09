@@ -1,0 +1,272 @@
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+    margin: 0px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 90px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-align: left;
+    font-family: 'Satisfy', cursive;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    font-size: 36px;
+    margin-left: 10px;
+    color: rgba(189, 195, 199,1.0);
+}
+
+#main {
+    padding left: 0px;
+    position: fixed;
+  }
+#barra {
+    transition: margin-left .5s;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+{
+margin:0px; /* sin margenes */
+background-image:url("../imagenes/fondo.jpg");
+/*background-color: rgba(149, 165, 166,1.0);*/
+background-attachment:fixed; /* fondo fijo */
+background-size: 100% 100%;
+background-repeat:none;
+font-family: 'Satisfy', cursive;
+}
+
+nav{ /* contenedor de objetos */
+	position:fixed;
+	height:65px;
+	width:100%;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+ul{
+	margin:0px;
+	padding:0px; /* espacio de relleno */
+	background-color: rgba(46, 204, 113,1.0); /
+	display:block;
+	height:65px;
+}
+li{
+	float:left; /* capacidad del objeto de rellenar el espacio */
+	width:20%; /* ancho */
+	list-style:none; /* para sacar viñetas */
+	height:50px;
+	display:block;
+}
+#titulo{
+	width:60%;
+}
+a{
+	display:block;
+	width:100%;
+	text-align:center;
+	color:rgb(255,255,255);
+	height:65px;
+}
+.itemmenu{
+	text-align:left;
+	padding-left: 30px;
+}
+#iconomenu{
+  padding-left: 20px;
+	padding-top:16px;
+}
+
+#menu{
+	background:rgba(0, 0, 0,0.70);
+	height:100%;
+	width:40%;
+	position:fixed;
+	left:-100%;
+	top:65px;
+}
+#contenedor{
+	top:40px;
+	height:100%;
+
+}
+#imagenes{
+  transition: margin-left .5s;
+  padding-top:80px;
+  padding-left: 20px;
+	width: 40%;
+	border: 2px;
+  height: 100%;
+}
+#clima{
+  transition: margin-left .5s;
+  padding-top:80px;
+  padding-left:55%;
+  width: 50%;
+  border: 2px;
+  height: 100%;
+}
+article{
+	width:100%;
+	padding-top:50px;
+}
+h1{
+		height:35px;
+		font-size:35px;
+		padding-top:10px;
+		padding-bottom:20px;
+		margin:0px;
+		font-family: rgba(46, 204, 113,1.0);
+	}
+h2{
+	font-family: verdana;
+	font-size:40px;
+	color:rgb(255,255,255);
+	padding:15px;
+	margin:0px;
+	text-align:center;
+	/* efecto blur con filtro*/
+
+}
+/*h2:hover{
+	font-family: verdana;
+	width:80%;
+	font-size:43px;
+	color:rgb(255,255,255);
+	padding-right:10%;
+	padding-left:10%;
+	margin:0px;
+
+	text-align:center;
+	/* efecto blur con filtro*/
+/*filter: blur(0px);
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -o-filter: blur(0px);
+  -ms-filter: blur(0px);
+  transform: scale(1.00);
+}*/
+p{
+	font-family: verdana;
+	font-size:20px;
+	color:rgb(255,255,255);
+	padding:15px;
+	margin:0px;
+	text-align:center;
+}
+.menu{
+	float:none;
+	width:100%;
+	/*border-width:6px 0px 6px 0px;
+	border-style: solid;*/
+	/*border-color:rgba(0,0,0,0.5);*/
+	height:auto;
+	/*background-color:rgba(200,200,200,1);*/
+	margin:3%;
+	width:97%;
+}
+.itemmenu{
+	font-size:150%;
+	display:block;
+	height:auto;
+}
+@media screen and (max-width:626px ){
+	nav{
+		height:100px;
+	}
+	ul{
+		height:100px;
+	}
+	li{
+		height:100px;
+	}
+	/*****título*****/
+	h1{
+		height:40px;
+		font-size:30px;
+		padding-top:30px;
+		padding-bottom:40px;
+	}
+	a{
+		height:100px;
+		padding-top:0px;
+		padding-bottom:0px;
+
+	}
+	#iconomenu{
+		padding-top:35px;
+		padding-bottom:35px;
+		height:30px;
+	}
+	#menu{
+		top:100px;
+	}
+}
+@media screen and (min-width:626px ) and (max-width:980px){
+	nav{
+		height:100px;
+	}
+	ul{
+		height:100px;
+	}
+	li{
+		height:100px;
+	}
+	/*****título*****/
+	h1{
+		height:40px;
+		font-size:40px;
+		padding-top:25px;
+		padding-bottom:35px;
+	}
+	a{
+		height:100px;
+		padding-top:0px;
+		padding-bottom:0px;
+		font-size:40px;
+	}
+	#iconomenu{
+		padding-top:30px;
+		padding-bottom:30px;
+		height:40px;
+	}
+	#dibujo{
+		height:40px;
+		width:40px;
+	}
+	#menu{
+		top:100px;
+	}
+	.itemmenu{
+		font-size:200%;
+	}

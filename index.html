@@ -1,0 +1,89 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+	<link href="estilos/estilo.css" rel="stylesheet">
+	<script src="jquery/jquery-latest.js"></script>
+	<script src="jquery/menu.js"></script>
+	<style>
+	@import url('https://fonts.googleapis.com/css?family=Satisfy');
+	</style>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li>
+					<a id=iconomenu><canvas id="dibujo" width= "16" height= "16"></canvas></a>
+				</li>
+				<li id="titulo">
+					<a><h1>Ring a comer<h1></a>
+				</li>
+				<li id="buscar">
+					<a></a>
+				</li>
+				</ul>
+
+		</nav>
+		<section>
+			<div id="imagenes">
+				<img src="">
+				<img src="">
+				<img src="">
+				<img src="">
+				<img src="">
+				<img src="">
+				<img src="">
+				<img src="">
+		</section>
+		<div id="contenedor">
+			<ul id="menu">
+				<li class="menu">
+					<a class="itemmenu">Vegetarianos</a>
+				</li >
+				<li class="menu">
+					<a class="itemmenu">Veganos</a>
+				</li>
+				<li class="menu">
+					<a class="itemmenu">Diabeticos</a>
+				</li>
+				<li class="menu">
+					<a class="itemmenu">Celiacos</a>
+				</li>
+				<li class="menu">
+					<a class="itemmenu">Intolerantes a la lactosa</a>
+				</li>
+			</ul>
+		</div>
+
+	    <footer>
+	    </footer>
+
+
+	<script>
+	var canvas = document.getElementById('dibujo'); /*variable que ocupa un lugar en la memoria ram, guarda un objeto de tipo canvas por su id, el id tiene q ser el mismo q en la etiqueta html*/
+	var context = canvas.getContext('2d'); /*genera el contexto, es donde vamos a dibujar todas las lineas curvas y circunferencias*/
+
+		context.beginPath(); /*quiere decir que va a comenzar con nuestro dibujito*/
+		context.moveTo(0,1); /*mover el lapiz*/
+		context.lineTo(0,4); /*dibujar la linea*/
+		context.lineTo(16,4);
+		context.lineTo(16,1);
+		context.moveTo(0,7);
+		context.lineTo(0,9);
+		context.lineTo(16,9);
+		context.lineTo(16,7);
+		context.moveTo(0,13);
+		context.lineTo(0,16);
+		context.lineTo(16,16);
+		context.lineTo(16,13);
+		context.closePath(); /*para cerrar el dibujo*/
+		context.lineWidth = 2; /*grosor dela linea*/
+		context.strokeStyle = "white"; /*es el color de las lineas del perimetro de la figura*/
+		context.stroke(); /*cierra el comando*/
+		context.fillStyle = "rgba(255, 255, 255,1.0)"; /*relleno de la figura*/
+		context.fill();	/*cierra el comando*/
+
+
+	</script>
+
+	</body>
+</html>

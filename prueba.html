@@ -1,0 +1,110 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="estiloprueba.css" rel="stylesheet">
+
+  <style>
+	@import url('https://fonts.googleapis.com/css?family=Satisfy');
+  </style>
+
+	</head>
+	<body>
+		<nav id="barra">
+			<ul>
+				<li>
+					<a id=iconomenu>
+						<div id="main">
+							<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+						</div></a>
+				</li>
+				<li id="titulo">
+					<a><h1>Ring a comer<h1></a>
+				</li>
+				<li id="buscar">
+					<a></a>
+				</li>
+				</ul>
+
+		</nav>
+
+    <div id="mySidenav" class="sidenav">
+
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#8592;</a>
+      <a href="#">Veganos</a>
+      <a href="#">Vegetarianos</a>
+      <a href="#">Celiacos</a>
+      <a href="#">Diabeticos</a>
+      <a href="#">Intolerantes a la lactosa</a>
+
+    </div>
+
+    <script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "270px";
+        document.getElementById("main").style.marginLeft = "0px";
+				document.getElementById("barra").style.marginLeft = "270px";
+				document.getElementById("imagenes").style.marginLeft = "270px";
+				document.getElementById("clima").style.marginLeft = "270px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+				document.getElementById("barra").style.marginLeft= "0";
+				document.getElementById("imagenes").style.marginLeft= "0";
+				document.getElementById("clima").style.marginLeft= "0";
+	      document.body.style.backgroundColor = "white";
+
+    }
+
+
+    </script>
+
+		<section>
+			<div id="imagenes">
+				<img src="imagenes/comida1" height="30%" width="40%">
+				<img src="imagenes/comida2.jpg" height="30%" width="40%">
+				<img src="imagenes/comida3.jpg" height="30%" width="40%">
+				<img src="imagenes/comida4.jpg" height="30%" width="40%">
+				<img src="imagenes/comida5.jpg" height="30%" width="40%">
+				<img src="imagenes/comida6.jpg" height="30%" width="40%">
+				<img src="imagenes/comida7.jpg" height="30%" width="40%">
+				<img src="imagenes/comida8.jpg" height="30%" width="40%">
+				<img src="imagenes/comida9.jpg" height="30%" width="40%">
+			</div>
+			<div id="clima">
+				<img src="imagenes/clima.jpg" height="80%" width="80%">
+			</div>
+		</section>
+
+
+		<div id="contenedor">
+			<ul id="menu">
+				<li class="menu">
+					<a class="itemmenu">Vegetarianos</a>
+				</li >
+				<li class="menu">
+					<a class="itemmenu">Veganos</a>
+				</li>
+				<li class="menu">
+					<a class="itemmenu">Diabeticos</a>
+				</li>
+				<li class="menu">
+					<a class="itemmenu">Celiacos</a>
+				</li>
+				<li class="menu">
+					<a class="itemmenu">Intolerantes a la lactosa</a>
+				</li>
+			</ul>
+		</div>
+
+	    <footer>
+	    </footer>
+
+
+</html>
